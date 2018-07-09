@@ -1,0 +1,13 @@
+# import Entity, PrimaryGeneratedColumn, ManyToMany, ManyToOne, OneToMany, EntityEnum, Column from '../node_modules/graphql_typeorm/src/typeorm.graphql'
+
+type Author @Entity {
+    id: Int! @PrimaryGeneratedColumn
+    name: String
+    books: [Book] @ManyToMany(inverseSide: "authors") @JoinColumn
+}
+
+type Book @Entity {
+    id: Int! @PrimaryGeneratedColumn
+    title: String!,
+    authors: [Author] @ManyToMany(inverseSide: "books")
+}
