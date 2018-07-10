@@ -2,12 +2,12 @@
 
 type Author @Entity {
     id: Int! @PrimaryGeneratedColumn
-    name: String
+    name: String @Column(type: "varchar")
     books: [Book] @ManyToMany(inverseSide: "authors") @JoinColumn
 }
 
 type Book @Entity {
     id: Int! @PrimaryGeneratedColumn
-    title: String!,
+    title: String! @Column(type: "varchar")
     authors: [Author] @ManyToMany(inverseSide: "books")
 }

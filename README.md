@@ -5,6 +5,17 @@
 
 First, install [Yeoman](http://yeoman.io) and generator-grapheasy using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
+# Current
+
+* Install yeoman (npm install -g yo)
+* Clone this repo
+* From new repo directory do npm link
+* Then generate a project (yo grapheasy) from new project directory.
+
+
+
+# Planned
+
 ```bash
 npm install -g yo
 npm install -g generator-grapheasy

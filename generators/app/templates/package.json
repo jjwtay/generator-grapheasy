@@ -16,8 +16,8 @@
         "graphql-import": "^0.6.0",
         "graphql-tools": "^3.0.4",
         "graphql-yoga": "^1.14.10",
-        "graphql_typeorm": "^1.0.4",
-        "graphschematojson": "^1.0.2",
+        "graphql_typeorm": "^1.1.0",
+        "graphschematojson": "^1.1.0",
         "pg": "^7.4.3",
         "typeorm": "^0.2.7"
     }     
